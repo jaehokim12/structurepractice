@@ -1,0 +1,11 @@
+.blockContainer{
+    margin: 500px auto;
+    border: 1px solid red;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
