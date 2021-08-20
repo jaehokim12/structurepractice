@@ -1,22 +1,23 @@
-import { stat } from 'fs'
-import * as actions from '../action'
+
+import * as actions from '../action/mic'
 
 
 const initialState = {
-    micState: true
+    micState: 'true'
 }
 const micReducer = (state= initialState, action)=>{
     switch(action.type){
         case actions.MICOFF: 
             return{
                 ...state,
-                micState: false
+                micState: 'false'
         }
-        case action.MICON:
+        case actions.MICON:
             return{
                 ...state,
-                micState: true
+                micState: 'true'
             }
         default: return state
     }
 }
+export default micReducer

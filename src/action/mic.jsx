@@ -7,8 +7,14 @@ export const MicOfffunc = ()=>{
         type: MICOFF
     }
 }
-export const MICOnfunc = ()=>{
+export const MicOnfunc = ()=>{
     return {
         type: MICON
     }
+}
+export const micOffAsync = ()=> dispatch =>{
+    setTimeout(()=>dispatch(MicOfffunc()),5000)
+}
+export const micOnAsync = ()=> dispatch =>{
+    setTimeout(()=>dispatch(MicOnfunc()),5000)
 }
